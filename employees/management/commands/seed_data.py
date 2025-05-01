@@ -48,4 +48,4 @@ class Command(BaseCommand):
                     review_date=fake.date_between(start_date='-6m', end_date='today')
                 )
 
-        print("Done seeding data.")
+        print("Done seeding data!")
