@@ -1,8 +1,9 @@
 #Employee Mangement System API
 
     This is a Crud based Employee Management System built with Django and PostgreSQL.
-    This in includes the following APIs for managing: employees, departments, attendance, and performance
-    Swagger has been intergrated with this project for API documentation
+    This in includes APIs for managing: employees, departments, attendance, and performance
+    
+    Swagger UI has been intergrated with this project for API documentation
 
 
 #Features
@@ -18,12 +19,23 @@
     Faker implementation for generating fake data
 
 #Installation
-    ##Prerequirements:
+    Prerequirements:
         Python 3.8+
         PostgreSQL
         Git
         pip and virtualenv
 
-    ##Clone and setup
+    #Clone and setup:
+        git clone <https://github.com/Christianvdev/CRUD-employee-management-system>
+        cd <DjangoInternFolder>
+        python -m venv venv
+        venv\Scripts\activate
 
-    
+    #.env README:
+        in the root of your project add the following to your .env file for the database:
+            DATABASE_URL=postgres://postgres:<yourpassword>@localhost:5432/employee_db
+
+    #Superuser creation & Token:
+        to edit the database with ease and to create your token create a superuser. Follow the steps below:
+            python manage.py createsuperuser
+            python manage.py drf_create_token <superusername>
