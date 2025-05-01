@@ -1,9 +1,9 @@
 #Employee Management System API
 
-    This is a CRUD-based Employee Management System built with Django and PostgreSQL.
-    This includes APIs for managing: employees, departments, attendance, and performance
+This is a CRUD-based Employee Management System built with Django and PostgreSQL.
+This includes APIs for managing: employees, departments, attendance, and performance
 
-    Swagger UI has been integrated with this project for API documentation
+Swagger UI has been integrated with this project for API documentation
 
 
 #Features:
