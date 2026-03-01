@@ -1,12 +1,10 @@
 #Employee Management System API
 
-This is a CRUD-based Employee Management System built with Django and PostgreSQL.
+This is a CRUD-based Employee Management System built with Django and PostgreSQL for my backend Internship.
 This includes APIs for managing: employees, departments, attendance, and performance
 
 Swagger UI has been integrated with this project for API documentation
 
-
-#Features:
 
 ##CRUD operations for:
 
@@ -42,6 +40,6 @@ DATABASE_URL=postgres://postgres:<yourpassword>@localhost:5432/employee_db
 
 #Superuser creation & Token:
 
-##to edit the database with ease and to create your token create a superuser. Follow the steps below:
+##to edit the database with ease and to create your token create a superuser. Follow below:
 python manage.py createsuperuser
-python manage.py drf_create_token <superusername>
+python manage.py drf_create_token <superusername>👌
