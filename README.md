@@ -1,45 +1,40 @@
-#Employee Management System API
+# Employee Management System API
 
-This is a CRUD-based Employee Management System built with Django and PostgreSQL for my backend Internship.
-This includes APIs for managing: employees, departments, attendance, and performance
+A CRUD-based REST API for managing employee data, built with Django and PostgreSQL. 
+Built during my backend internship to demonstrate real-world API design with 
+authentication, documentation, and relational data modeling.
 
-Swagger UI has been integrated with this project for API documentation
+## What It Does
 
+Provides API endpoints for managing four related resources:
+- **Employees** — core personnel records
+- **Departments** — organizational units employees belong to
+- **Attendance** — tracking employee presence over time
+- **Performance** — storing performance review data per employee
 
-##CRUD operations for:
+## Features
 
-Employees
-Departments
-Attendance
-Performance
+- Token authentication (DRF) to secure all endpoints
+- Swagger UI for interactive API documentation and testing
+- PostgreSQL database with proper relational schema
+- Faker integration for generating realistic test data
 
-Swagger UI for testing and documenting the API
-PostgreSQL database for storing information
-Token authentication
-Faker implementation for generating fake data
+## Tech Stack
 
-#Installation:
+Python · Django · Django REST Framework · PostgreSQL · Swagger (drf-yasg)
 
-##Prerequistes:
+## Installation
 
-Python 3.8+
-PostgreSQL
-Git
-pip and virtualenv
+**Prerequisites:** Python 3.8+, PostgreSQL, Git
 
-##Clone and setup:
-git clone <https://github.com/Christianvdev/CRUD-employee-management-system>
-cd <DjangoInternFolder>
+```bash
+git clone https://github.com/Christianvdev/CRUD-employee-management-system
+cd CRUD-employee-management-system
 python -m venv venv
 venv\Scripts\activate
+pip install -r requirements.txt
+```
 
-#.env setup:
+## Environment Setup
 
-in the root of your project add the following to your .env file:
-DATABASE_URL=postgres://postgres:<yourpassword>@localhost:5432/employee_db
-
-#Superuser creation & Token:
-
-##to edit the database with ease and to create your token create a superuser. Follow below:
-python manage.py createsuperuser
-python manage.py drf_create_token <superusername>👌
+Create a `.env` file in the project root:
